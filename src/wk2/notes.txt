@@ -1,0 +1,14 @@
+Text
+    String
+    char
+
+ number values
+    int         32 bits     4 bytes
+    double      64 bits     8 bytes
+    float       32 bits     4 bytes
+    byte        8 bits      1 bytes
+    short       16 bits     2 bytes
+    long        64 bits     8 bytes
+
+misc
+    boolean             true || false
