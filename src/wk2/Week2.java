@@ -1,5 +1,6 @@
 package wk2;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Week2 {
@@ -7,7 +8,75 @@ public class Week2 {
     //psvm + tab
     public static void main(String[] args) {
 
-        task2();
+        //task2();
+        //typecasting();
+        guessingGame();
+    }
+
+    static void guessingGame(){
+        /*
+        Ask the user to guess a number between 1 and 10.
+        Allow the user a maximum of 3 guesses.
+        If guesses correctly
+            congratulate them
+        if guesses incorrectly.
+            message: number is higher or lower
+         */
+        //what variables do we need?
+        //random number => Random object   => random.nextInt(min, max)
+        //keep track of guesses
+        // Scanner to user input
+
+        Random random = new Random();
+        int trackNumberOfGuesses = 0;
+        int MAX_NUMBER_OF_GUESSES = 3, MIN_VALUE = 1, MAX_VALUE = 10;
+        int numberToGuess = random.nextInt(MIN_VALUE, MAX_VALUE + 1);
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Welcome to our game.");
+        System.out.printf("You will have %d guess to guess a number" +
+                " between %d & %d%n", MAX_NUMBER_OF_GUESSES, MIN_VALUE, MAX_VALUE);
+
+        while(trackNumberOfGuesses < MAX_NUMBER_OF_GUESSES){
+
+            System.out.printf("Enter guess number %d of %d: %n", trackNumberOfGuesses + 1, MAX_NUMBER_OF_GUESSES);
+            int userGuess = input.nextInt();
+
+            if(userGuess == numberToGuess){
+                System.out.println("Congrats! You win! The number was indeed " + numberToGuess);
+                break;
+            }
+            else{
+                String hint = userGuess < numberToGuess ? "higher" : "lower";
+                System.out.printf("Incorrect. Please guess a %s number%n", hint);
+            }
+
+            trackNumberOfGuesses++;
+        }
+
+    }
+
+    static void greet(String name){
+        greet(name, 18);
+    }
+    static void greet(String name, int age){
+        System.out.printf("Hello %s. You are %d years old.",
+                name, age);
+    }
+    static void greet(int age, String name){
+        greet(name, age);
+    }
+
+    static void outputNumber(double n){
+        System.out.println("Value is " + n + " from double arg");
+    }
+
+//    static void outputNumber(byte n){
+//        System.out.println("Value is " + n + " from byte arg");
+//    }
+    static void workingWithMethods(){
+        outputNumber((byte)123);
+        outputNumber(1234);
     }
 
     static void task1() {
@@ -86,5 +155,33 @@ public class Week2 {
                 "requested that I transport %d pounds. ", cost, trips, userRequest);
 
 
+    }
+
+    static void typecasting(){
+
+        String s1 = "123";
+        int v1 = Integer.parseInt(s1);
+        float v2 = Float.parseFloat(s1);
+
+        byte v3 = 123;
+        //promote       implicity typecasting   smaller to bigger
+        int v4 = v3;
+
+        short v5 = (short)v4;
+
+
+        int v6 = 130;
+        byte v7 = (byte)v6;
+
+/*
+int
+        127      128       129     130
+byte
+        127     -128        -127    -126
+-128-127
+
+
+ */
+        System.out.println(v7);
     }
 }
