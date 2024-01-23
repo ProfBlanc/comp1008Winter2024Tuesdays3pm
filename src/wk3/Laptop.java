@@ -27,7 +27,6 @@ public class Laptop {  // inherits from Object
         this.dimensions = dimensions;
     }
 
-
     //actions
 
 }

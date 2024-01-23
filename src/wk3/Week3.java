@@ -1,11 +1,12 @@
 package wk3;
 
 import java.util.Scanner;
+import java.util.concurrent.ScheduledFuture;
 
 public class Week3 {
 
     public static void main(String[] args) {
-        example3();
+        example5();
     }
     static void example1(){
 
@@ -50,8 +51,61 @@ public class Week3 {
         System.out.println(c2.screenSize);
 
     }
-    static void example4(){}
-    static void example5(){}
+    static void example4(){
+
+        String[] names = new String[5];
+        System.out.println(names[4]);
+        System.out.println(names.length);
+
+        int[] nums = new int[5];
+        System.out.println(nums[2]);
+
+        Person[] people = new Person[5];
+        System.out.println(people[2]);
+
+        double[] second = {1,2,3,4,5};
+        System.out.println(second.length);
+        System.out.println(second[2]);
+
+        Object[] anyValues = {second[1], nums[0], people[2],
+        names[3], true, "Cool!"};
+
+        System.out.println(anyValues.length);
+        System.out.println(anyValues[4]);
+
+    }
+    static void example5(){
+
+        /*
+
+                Monday          Tues            Wed
+
+                python          java            co-op
+                css             math            business
+         */
+
+        String[][] schedule1 = new String[3][2];
+        schedule1[0][0] = "python";
+        schedule1[0][1] = "css";
+        schedule1[1][0] = "java";
+        schedule1[1][1] = "math";
+        schedule1[2][0] = "co-op";
+        schedule1[2][1] = "business";
+
+        System.out.println(schedule1[2][1]);
+
+
+        String[][] schedule2 = {{"python", "css"},
+                {"java", "math"}, {"co-op", "business"}};
+
+        for(int i= 0; i < schedule2.length; i++){
+
+            for(int j = 0; j < schedule2[i].length; j++){
+
+                System.out.println(schedule2[i][j]);
+            }
+        }
+    }
     static void example6(){}
     static void example7(){}
     static void example8(){}
