@@ -1,5 +1,7 @@
 package wk3;
 
+import java.util.Scanner;
+
 public class Week3 {
 
     public static void main(String[] args) {
@@ -34,11 +36,17 @@ public class Week3 {
     }
     static void example3(){
 
+        Scanner input = new Scanner(System.in);
+
         Cellphone c1 = new Cellphone();
         Cellphone c2 = new Cellphone("iPhone", 100, Cellphone.Memory.THIRTY_TWO,
                 new double[]{123, 456,789}, false, true);
 
         System.out.println(c2.make);
+        c2.make = "iiPhone";
+        System.out.println(c2.screenSize);
+
+        c2.screenSize = 123;
         System.out.println(c2.screenSize);
 
     }

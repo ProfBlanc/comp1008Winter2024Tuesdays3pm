@@ -13,3 +13,25 @@ In main method of week 3
 Create 3 Cellphone objects
     using the 3 constructors
 Output 1 attribute of each Cellphone object
+
+
+
+Task 3
+Create a class named Person
+    attributes:
+        name
+        age
+        weight
+    attributes are all going to be private
+    enforce the following limitation
+        name: at least 3 chars
+        age: between 0-120
+        weight: 1-your choice
+    code getters and setters
+        in setters, only accept value range
+Code 2 constructors: default + 3-arg constructor (name, age, weight)
+
+Task 4:
+    Create 1 Person object using 3-arg constructor. Use valid arguments
+    attempt to change all three attributes to invalid values. Output the individual attributes
+    to confirm that the originals value are unchanged.

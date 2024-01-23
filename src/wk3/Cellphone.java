@@ -2,9 +2,21 @@ package wk3;
 
 public class Cellphone {
 
-    String make;
+    //encapsulation: hiding data / making data less accessible
 
-    double screenSize;
+    //hide data
+    // validate data: limit or restrict values
+
+    // accessibility level: limit the access of attributes and actions\
+
+    //4: default aka package-private, public, protected, private
+    // package: default, protected: same package, accessible. Not inaccessible
+    // public: inside same package or not => still accessible
+    // private: only accessible inside class definition
+
+    public String make;
+
+    protected double screenSize;
 
     //int[] memory = {8, 16, 32};
     //enum: enumerable. preset values. aka dropdown menu of options
@@ -21,7 +33,9 @@ public class Cellphone {
 
     double[] dimensions = new double[3];
 
-    boolean dualSims, operatingSystem;
+    private double priceToMake = 5;
+
+    private boolean dualSims, operatingSystem;
 
     public Cellphone(){}
 
@@ -32,5 +46,19 @@ public class Cellphone {
         this.dimensions = dimensions;
         this.dualSims = dualSims;
         this.operatingSystem = operatingSystem;
+    }
+
+    //getter : retrieve the data value
+    // setter is to set the value
+    //aka accessor and mutator
+
+
+    public double getPriceToMake() {
+        return priceToMake;
+    }
+
+    public void setPriceToMake(double priceToMake) {
+        if(priceToMake >= 5)
+            this.priceToMake = priceToMake;
     }
 }
