@@ -11,5 +11,5 @@ Have 5 attributes
 Task 2
 In main method of week 3
 Create 3 Cellphone objects
-    using the 3 constructos
+    using the 3 constructors
 Output 1 attribute of each Cellphone object

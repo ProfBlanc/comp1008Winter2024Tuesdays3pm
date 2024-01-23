@@ -3,7 +3,7 @@ package wk3;
 public class Week3 {
 
     public static void main(String[] args) {
-        example2();
+        example3();
     }
     static void example1(){
 
@@ -32,7 +32,16 @@ public class Week3 {
 
 
     }
-    static void example3(){}
+    static void example3(){
+
+        Cellphone c1 = new Cellphone();
+        Cellphone c2 = new Cellphone("iPhone", 100, Cellphone.Memory.THIRTY_TWO,
+                new double[]{123, 456,789}, false, true);
+
+        System.out.println(c2.make);
+        System.out.println(c2.screenSize);
+
+    }
     static void example4(){}
     static void example5(){}
     static void example6(){}
