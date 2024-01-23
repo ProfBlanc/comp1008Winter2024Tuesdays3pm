@@ -1,0 +1,14 @@
+Class
+    A blueprint or a template to create or do something
+    Scanner: get user input
+        method: get int, double, other types
+    Class outlines
+        attributes / characteristics
+        actions / behaviors
+
+Object
+    a creation or instance or a class (blueprint, template)
+    independent
+
+When creating a class: create a file PacalCase.java
+    Laptop.java     NOT laptop.java

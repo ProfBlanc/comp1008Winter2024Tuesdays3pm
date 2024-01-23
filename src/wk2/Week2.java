@@ -10,7 +10,28 @@ public class Week2 {
 
         //task2();
         //typecasting();
-        guessingGame();
+//        guessingGame();
+        creatingObject();
+    }
+
+    static void creatingObject(){
+
+        GuessingGame guessingGame = new GuessingGame(1, 10);
+        Scanner input = new Scanner(System.in);
+        do{
+            System.out.println("Enter a number");
+            int number = input.nextInt();
+
+            if(guessingGame.checkUserGuess(number)){
+                System.out.println("Correct");
+                break;
+            }
+            else{
+                System.out.println("Incorrect");
+            }
+        }
+        while(true);
+        System.out.println(guessingGame.numberToGuess);
     }
 
     static void guessingGame(){
