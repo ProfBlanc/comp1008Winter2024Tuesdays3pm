@@ -1,0 +1,26 @@
+PizzaOrder
+    allow the user to
+        number of slices
+        number of toppings
+        size of pizza
+        input their toppings
+    only going to allow the user to choose X toppings
+    we will calculate
+        the price based on the number of slices, size of pizza
+            base price for pizza size & price per slice
+        calculate the delivery time
+            min delivery time
+            add time for
+                pizza size
+                number of toppings
+        allow student and eldery discounted pricing
+
+
+
+Change the parameter of SetToppings: accept an array of Strings
+    create an arraylist of allowedTopping
+    using an enhanced for loop,
+        iterate through all the parameter values (array of String)
+        only add to the toppings arraylist items that are found in your allowedToppings
+        arraylist
+
