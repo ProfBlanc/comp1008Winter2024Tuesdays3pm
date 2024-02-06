@@ -6,11 +6,24 @@ public class Week5 {
 
     public static void main(String[] args) {
 
-        //example1();
+        example5();
+
+    }
+    static void example5(){
+        PizzaOrder pizzaOrder1 = PizzaOrder.SmallPepperoniPizza();
+        PizzaOrder pizzaOrder2 = PizzaOrder.MediumThreeToppingPizza("pineapple", "bacon", "chicken");
+
+        System.out.println(pizzaOrder1);
+        System.out.println(pizzaOrder2);
+    }
+    static void example4(){
         PizzaOrder pizzaOrder = new PizzaOrder("large", "cheese", "pepperoni", "green peppers");
         System.out.println(pizzaOrder.getToppings());
         System.out.println(pizzaOrder.getNumberOfToppings());
         System.out.println(pizzaOrder.getPizzaSize());
+        System.out.println(pizzaOrder.getPrice());
+
+        // PizzaOrder.PizzaSizes;
 
     }
     static void example3(){

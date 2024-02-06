@@ -8,6 +8,7 @@ PizzaOrder
     we will calculate
         the price based on the number of slices, size of pizza
             base price for pizza size & price per slice
+    For practice
         calculate the delivery time
             min delivery time
             add time for
@@ -24,3 +25,20 @@ Change the parameter of SetToppings: accept an array of Strings
         only add to the toppings arraylist items that are found in your allowedToppings
         arraylist
 
+Factory Method
+    preset config
+        returns an object of that class
+
+
+
+Create a Student class
+    name: any value
+    age: between 18 and 65
+    gpa: between 1.0 and 4.0
+    job: any value
+    college: a preset listing of 3 college
+    create a factory method for
+        mature student:
+            has a job, age is 30 or older
+        honor roll student
+            has a gpa for 3.5 or higher
