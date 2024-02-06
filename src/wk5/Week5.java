@@ -8,6 +8,9 @@ public class Week5 {
 
         //example1();
         PizzaOrder pizzaOrder = new PizzaOrder("large", "cheese", "pepperoni", "green peppers");
+        System.out.println(pizzaOrder.getToppings());
+        System.out.println(pizzaOrder.getNumberOfToppings());
+        System.out.println(pizzaOrder.getPizzaSize());
 
     }
     static void example3(){

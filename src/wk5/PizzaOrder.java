@@ -53,11 +53,30 @@ public class PizzaOrder {
         };
     }
 
-    public ArrayList<String> getToppings() {
-        return toppings;
+    public String getToppings() {
+        String value = "";
+        for(String topping : toppings){
+            value += topping + '\t';
+        }
+        return value;
     }
 
-    public void setToppings(ArrayList<String> toppings) {
-        this.toppings = toppings;
+    public void setToppings(String[] toppings) {
+
+        ArrayList<String> allowedToppings = new ArrayList<>();
+        allowedToppings.add("pepperoni");
+        allowedToppings.add("cheese");
+        allowedToppings.add("pineapple");
+        allowedToppings.add("bacon");
+        allowedToppings.add("steak");
+        allowedToppings.add("chicken");
+
+        for(String topping : toppings){
+            if(allowedToppings.contains(topping.toLowerCase())){
+                numberOfToppings++;
+                this.toppings.add(topping);
+            }
+        }
+
     }
 }
