@@ -6,8 +6,16 @@ public class Week5 {
 
     public static void main(String[] args) {
 
-        example5();
+        example6();
 
+    }
+    static void example6(){
+        Student s1 = Student.MatureStudent("Joe", 40, 2.2);
+        Student s2 = Student.HonorRollStudent("Mary", 20, 3.6);
+        Student s3 = new Student("Jack", 32, 3.2, "Lakehead");
+        System.out.println(s1);
+        System.out.println(s2);
+        System.out.println(s3);
     }
     static void example5(){
         PizzaOrder pizzaOrder1 = PizzaOrder.SmallPepperoniPizza();
