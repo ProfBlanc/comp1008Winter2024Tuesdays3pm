@@ -1,0 +1,17 @@
+Unit Testing
+    testing a method to determine if it is
+    producing the correct results
+    expectation
+    actual result
+
+    add(int a, int b) => sum a+b
+    add(10, 30) => 40
+    add(-10, 30) => 20
+
+
+create a Car class
+    String color: only 3 colors
+    int doors: 2, 4, 5 => number of doors of a car
+    double speed: 0-400
+    transmission: either manual, auto, cvt
+Take this up at 15:57
