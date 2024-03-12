@@ -27,7 +27,7 @@ Alter the script
 
     After asking user for their year and semester
         Ask user if they would like to ADD or DELETE or UPDATE or VIEW grade
-        You've already already done ADD
+        You've have already done ADD
         if DELETE
             ask user for course code & evalution
                 remove the .txt file
