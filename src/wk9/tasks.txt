@@ -1,0 +1,21 @@
+Create A Student-Course-Grade Organizer
+
+Ask the user to enter the year and semester of their school
+    Enter a year: 2024
+    Enter a semester: winter
+Create in the wk9 dir, the directorIES
+    wk9/2024/winter
+    iff does not exist
+
+Continually ask the student for their course code for that year-semester combo
+Enter a course code for 2024 winter semester: comp1008
+Enter a course code for 2024 winter semester: comp2003
+    Until the user enter either '' or 'quit'
+    For each course code, create a new directory inside of wk9/{yer}/{semester}
+
+THEN, ask the user to enter their assignment1 & mid-term mark (2 prompts) for each course
+    Create a file named assignment.txt, mid-term.txt
+        contents will be the grade
+Enter your mark for assignment 1 for comp1008 2024 winter semester: 90
+    wk9/2024/winter/comp1008/assignment.txt
+        90
