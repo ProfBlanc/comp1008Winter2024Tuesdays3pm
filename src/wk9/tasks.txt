@@ -19,3 +19,20 @@ THEN, ask the user to enter their assignment1 & mid-term mark (2 prompts) for ea
 Enter your mark for assignment 1 for comp1008 2024 winter semester: 90
     wk9/2024/winter/comp1008/assignment.txt
         90
+
+
+
+
+Alter the script
+
+    After asking user for their year and semester
+        Ask user if they would like to ADD or DELETE or UPDATE or VIEW grade
+        You've already already done ADD
+        if DELETE
+            ask user for course code & evalution
+                remove the .txt file
+        if UPDATE
+            ask user for course code and evaluation & new grade
+                update the contents of the .txt file
+        if VIEW
+            ask user for code code and evaluation and output the grade
