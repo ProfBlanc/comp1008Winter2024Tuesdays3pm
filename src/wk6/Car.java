@@ -9,6 +9,13 @@ public class Car {
     enum TransmissionTypes {MANUAL, AUTO, CVT}
     private TransmissionTypes transmission = TransmissionTypes.AUTO;
 
+    public Car(){}
+    public Car(String color, int doors, double speed) {
+        setColor(color);
+        setSpeed(speed);
+        setDoors(doors);
+    }
+
     public String getColor() {
         return color;
     }

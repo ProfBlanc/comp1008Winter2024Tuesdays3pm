@@ -15,3 +15,15 @@ create a Car class
     double speed: 0-400
     transmission: either manual, auto, cvt
 Take this up at 15:57
+
+Hard Assertion: class will result in Exception if assert fails
+AssertException
+
+1)Test the default constructor
+    assert that the default color is black
+2)Test the default constructor
+    assert that the default num doors is 2
+3)Test the default constructor
+    assert that the default speed is 0
+
+16:40

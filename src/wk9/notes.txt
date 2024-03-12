@@ -1,0 +1,23 @@
+File Manipulation
+    perform CRUD operations to the file system
+        CRUD
+            Create  Read Update Delete
+        File System
+            Your environment: Windows, Mac, Linux, etc
+    why?
+        persistent data => not destroyed
+        save and pick-up where you left off
+
+packages
+    java.io
+    java.nio
+
+Classes
+    Path
+        location of a file or folder
+    File
+        ONE SPECIFIC file or folder
+    Files
+        static methods that facilitate operations on files or folders
+
+in FM, you must wrap CRUD code in try-catch blocks
