@@ -6,7 +6,14 @@ public class Week10 {
     static void example8(){}
     static void example7(){}
     static void example6(){}
-    static void example5(){}
+    static void example5(){
+
+       // Shape s = new Shape();
+        Rectangle r1 = new Rectangle("Rectangle", 4, 20, 40);
+
+        Shape s1 = new Rectangle();
+
+    }
     static void example4(){
         //super             //sub
         Human h1 = new Superhero();

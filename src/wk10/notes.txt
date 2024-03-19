@@ -26,3 +26,70 @@ It is impossible to remove existence of instance variables and methods
 
 
 Polymorphism
+Def: Poly: many, Morphism: body/forms
+
+Overriding          A new implementation => parent-child class
+Overloading         A new variation => same class or child class
+
+Abstract classes
+    internal component
+    looks and feels like a concrete class
+    cannot be instantiated: dedicated super class
+    incomplete class
+    Optionally include abstract methods
+        incomplete method
+            method with no default implementation/body
+    only 1 abstract class can be implemented by concrete class
+
+Interface
+    list of requirements
+    external compoenent of a bigger object
+    public access level
+    abstract methods: declared but no implementation, constants
+    many interface can be implemented on a single concrete class
+    outlines/focuses on events and user-interaction
+
+
+
+Game part 1
+Me: state an object
+You: state as concrete class, abstract class, or interface
+
+Q1) Does object exist by self
+    Yes: concrete
+    No: component of another object
+
+Q2) Is this object an internal or external component
+    Internal: Abstract
+    External: Interface
+
+****************************
+House
+Apartment (Apt 101)
+Floor/flooring
+Hand
+
+*****************************
+Game part 2
+Me: state a feature
+You: state if feature exist in concret class, abstract class or interface
+
+constructor
+Concrete, Abstract
+
+instance variables
+    C   A
+
+constants
+    I   C   A
+
+methods with method bodies
+aka concrete methods
+    A       C
+
+
+methods with NOOOOOO method body
+aka abstract methods
+        A       I
+
+
