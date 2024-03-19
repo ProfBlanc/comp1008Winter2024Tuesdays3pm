@@ -7,7 +7,23 @@ public class Week10 {
     static void example7(){}
     static void example6(){}
     static void example5(){}
-    static void example4(){}
+    static void example4(){
+        //super             //sub
+        Human h1 = new Superhero();
+
+        /*
+         general                        specific
+
+            Animal          Cat         Tiger
+
+
+         */
+
+        h1.breathe();
+
+        //Superhero sh = new Human();
+
+    }
     static void example3(){
         Human bruceWayne = new Human("Bruce Wayne", 35, 220, 180);
         Superhero batman = new Superhero(bruceWayne, "Batman", "rich", 1234);
@@ -45,6 +61,6 @@ public class Week10 {
 
     }
     public static void main(String[] args) {
-        example3();
+        example4();
     }
 }
