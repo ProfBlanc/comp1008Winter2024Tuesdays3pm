@@ -1,0 +1,19 @@
+Create a class named Animal
+    instance variables
+        name, legs
+    2 constructors: default + 2-args
+    create toString()
+    create method isScary(): having more than 4 legs
+
+Create a class named Cat BASED on Animal
+    additional instance varaibles
+        weight, whiskers
+    3 constructors: default, 2-arg, 4-args (include 2 additional instance vars)
+    override toString to include additonal instance variables
+    override isScary: EITHER having more than 4 legs or weighing more than 200 pounds
+
+Bonus:
+Create a Tiger class based on Cat
+    give it 2 addtional instance variables
+    give it 1 addtional method
+    override toString

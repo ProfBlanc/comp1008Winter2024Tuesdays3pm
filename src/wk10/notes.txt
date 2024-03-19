@@ -1,0 +1,28 @@
+Inheritance
+Def: creating a class BASED on another class
+    every class created is BASED on Object class
+        Object: fundamental data type of everything in Java
+                toString(), equals(), getClass(), hashCode(), default constructor
+
+Why create a class based on another class:
+    To have a starting point
+
+What is inherited / what do you have access to?
+    instance variables
+    methods
+    constants
+    default constructor
+        * non-private (default, protected, public)
+
+OLD                                             NEW
+
+parent                                          child
+base                                            derived
+super                                           sub
+
+
+
+It is impossible to remove existence of instance variables and methods
+
+
+Polymorphism
