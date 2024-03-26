@@ -1,0 +1,26 @@
+Interface
+    a list of requirements
+    a list/series of abstract methods
+        method with NO method body
+            return data type, name, params
+
+CourseStructure
+    getPassingGrade
+    getSyllabus
+    getAssignments
+
+
+Professor                   Concrete
+InteractiveActivity         Interface
+Powerpoint                  Interface
+PublicSpeaker               Abstract
+
+
+A class can implement multiple interfaces
+
+An interface can EXTEND another interface.
+An interface can EXTEND multiple interfaces.
+
+FederalLaw
+ProvinceLaw
+MunipleLaw
